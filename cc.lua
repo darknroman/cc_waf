@@ -1,7 +1,7 @@
 local ip_block_time = 120  -- 封禁IP时间（秒）
 local ip_time_out = 30     -- 指定IP访问频率时间段（秒）
 local ip_max_count = 300   -- 指定IP访问频率计数最大值（秒）
-
+local BUSINESS = ngx.var.business -- 可加可不加
 -- 定义白名单IP地址列表
 local whitelist_ips = {
     -- 添加其他白名单IP地址
